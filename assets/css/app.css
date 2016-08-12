@@ -2,18 +2,22 @@
 .topbar {
     min-height: 64px;
     max-height: 256px;
-    background: rgba(66,133,244,1);
+    background: rgba(66, 133, 244, 1);
 }
+.g-fixed{max-width: 1440px}
 .topstyle {
     margin: 20px;
 }
 
-.exhibition{
+.exhibition {
     position: relative;
-    padding: 200px;
+    padding-top: 200px;
     top: 40px;
 }
-._fake-shadow{
+.am-u-img{
+    width: 400px;
+}
+._fake-shadow {
     z-index: 999;
     position: absolute;
     bottom: -12px;
@@ -25,38 +29,49 @@
     background-size: 1px 12px;
     height: 12px;
 }
-.img-logo{
+
+.img-logo {
     margin: 20px;
+    min-width: 475px;
 }
+
 .super-title {
-    left: 250px;
-    padding: 20px;
-    font-size: 60px;
+    position: absolute;
+    bottom: -15px;
+    left: 10%;
+    /* padding: 20px; */
+    font-size: 86px;
     font-family: 'Roboto', sans-serif;
     opacity: 0.2;
 }
-.sm-title{
+
+.sm-title {
     display: none;
     position: absolute;
-    left: 10%;
-    top: 20px;
-    font-size: 30px;
+    left: 26%;
+    top: 15px;
+    font-size: 48px;
     font-family: 'Roboto', sans-serif;
+    opacity: 0.9;
 }
+
 ._place_holder {
     height: 720px;
-    width: 100%;
+    width: 720px;
     background: hotpink;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
+
 li {
     float: left;
 }
+
 li a {
     display: block;
     color: white;
@@ -64,12 +79,43 @@ li a {
     padding: 16px;
     text-decoration: none;
 }
-li a:hover {
-    background-color: #111111;
-}
-._gray_s {
-    color: rgba(142,182,248,1);
-}
-._tolbar-text {
 
+li a:hover {
+    -webkit-animation-name: topbar_btn;
+    -webkit-animation-duration: 400ms;
+    animation-name: topbar_btn;
+    animation-duration: 400ms;
+    border: solid rgba(255, 255, 255, 0.8);
+    border-width: 0 0 2px 0
+}
+
+@-webkit-keyframes topbar_btn {
+    from {
+        border: solid rgba(255, 255, 255, 0.2);
+        border-width: 0 0 2px 0
+    }
+    to {
+        border: solid rgba(255, 255, 255, 0.8);
+        border-width: 0 0 2px 0
+    }
+}
+
+@keyframes topbar_btn {
+    from {
+        border: solid rgba(255, 255, 255, 0.2);
+        border-width: 0 0 2px 0
+    }
+    to {
+        border: solid rgba(255, 255, 255, 0.8);
+        border-width: 0 0 2px 0
+    }
+}
+
+._gray_s {
+    color: rgba(142, 182, 248, 1);
+}
+
+._tolbar-text {
+    position: absolute;
+    top: 6px;
 }
