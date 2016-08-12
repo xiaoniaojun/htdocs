@@ -1,0 +1,75 @@
+/* Write your styles */
+.topbar {
+    min-height: 64px;
+    max-height: 256px;
+    background: rgba(66,133,244,1);
+}
+.topstyle {
+    margin: 20px;
+}
+
+.exhibition{
+    position: relative;
+    padding: 200px;
+    top: 40px;
+}
+._fake-shadow{
+    z-index: 999;
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    background-image: url("/img/shadow.png");
+    background-repeat: repeat-x;
+    background-size: 1px 12px;
+    height: 12px;
+}
+.img-logo{
+    margin: 20px;
+}
+.super-title {
+    left: 250px;
+    padding: 20px;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    opacity: 0.2;
+}
+.sm-title{
+    display: none;
+    position: absolute;
+    left: 10%;
+    top: 20px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+._place_holder {
+    height: 720px;
+    width: 100%;
+    background: hotpink;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111111;
+}
+._gray_s {
+    color: rgba(142,182,248,1);
+}
+._tolbar-text {
+
+}
