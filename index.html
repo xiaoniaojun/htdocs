@@ -33,21 +33,20 @@
 
     <link rel="stylesheet" href="assets/css/amazeui.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-3.1.0.js"></script>
+    <script src="assets/js/app.js"></script>
 
     <link href="/assets/fonts/Roboto.ttf" rel="stylesheet">
-    <!--On Start-->
-    <script src="assets/js/app.js"></script>
 
 </head>
 <body>
 <!--TopBar-->
 <!--TODO: add motion-->
 <!--TODO: add nav bar event-->
-<header class="am-topbar am-topbar-inverse am-topbar-fixed-top topbar" id="topbar">
+<header data-ripple class="am-topbar am-topbar-inverse am-topbar-fixed-top topbar" id="topbar">
     <div class="am-g">
         <div class="am-u-md-3"><img class="am-img-responsive img-logo" id="logo" src="img/logo.png"></div>
-        <div class="am-u-md-3 sm-title" id="sm-title">SUSE<span class="_gray_s">˙</span>WEB<span
+        <div class="am-u-md-3 sm-title" id="sm-title">SUSE<span class="_gray_s">·</span>WEB<span
                 class="_gray_s">¬</span>DESIGN</div>
         <div class="am-u-md-3 am-u-lg-offset-4">
 
@@ -62,7 +61,7 @@
     </div>
     <!--TODO: let sp-title syn motion with topbar -->
 
-    <h1 class="super-title" id="super-title">SUSE<span class="_gray_s">˙</span>WEB<span class="_gray_s">¬</span>DESIGN
+    <h1 class="super-title" id="super-title">SUSE<span class="_gray_s">·</span>WEB<span class="_gray_s">¬</span>DESIGN
     </h1>
 
     <div class="_fake-shadow" aria-hidden="true"></div>
@@ -75,22 +74,37 @@
 <div class="exhibition">
     <div class="am-g am-g-collapse g-fixed">
         <div class="am-u-sm-6">
-            <div class="_place_holder" style="background: #ff5252"></div>
+            <div data-ripple class="_place_holder" style="background: #ff5252"><br><br>|||||||||||||||</div>
         </div>
         <div class="am-u-sm-6">
-            <div class="_place_holder" style="background: #37474f"></div>
+            <div data-ripple class="_place_holder" style="background: #37474f"></div>
         </div>
     </div>
     <div class="am-g am-g-collapse g-fixed">
-        <div class="am-u-sm-6">
+        <div data-ripple class="am-u-sm-6">
             <div class="_place_holder" style="background: #d1cfd4"></div>
         </div>
-        <div class="am-u-sm-6">
+        <div data-ripple class="am-u-sm-6">
             <div class="_place_holder" style="background: #01579b"></div>
         </div>
     </div>
 </div>
 
+<div data-ripple class="am-g">
+    <div class="_about">
+        <div class="_about-copyright">
+            <h2>Copyright © 技术支持<br><br><a class="_wx">四川理工学院大学生网络技术协会</a><br><small>有问题请联系QQ: 731931167</small></h2>
+        </div>
+        <div class="_about-support">
+            <b><ul>
+                <li>主办单位：学生工作部、共青团四川理工学院委员会</li><br>
+                <li>承办单位：计算机学院</li><br>
+                <li>协办单位：成都国信安信息产业基地有限公司</li><br>
+                <li>技术支持：四川理工学院大学生网络技术协会</li><br>
+            </ul></b>
+        </div>
+    </div>
+</div>
 
 <!--[if (gte IE 9)|!(IE)]><!-->
 <script src="assets/js/jquery.min.js"></script>

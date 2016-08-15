@@ -4,15 +4,19 @@
     max-height: 256px;
     background: rgba(66, 133, 244, 1);
 }
+
 .g-fixed{max-width: 1440px}
 .topstyle {
     margin: 20px;
 }
 
 .exhibition {
+    background: #f2f2f2;
     position: relative;
     padding-top: 200px;
+    padding-bottom: 100px;
     top: 40px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.4);
 }
 .am-u-img{
     width: 400px;
@@ -118,4 +122,52 @@ li a:hover {
 ._tolbar-text {
     position: absolute;
     top: 6px;
+}
+
+._about {
+    margin: 0 auto;
+    height: 200px;
+    background: #2196F3;
+}
+._about-copyright {
+    opacity: 0.2;
+    width: 63%;
+    float: left;
+    padding: 50px 100px 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+._about-support {
+    opacity: 0.2;
+    float: left;
+    width: 37%;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 60px 40px 20px;
+}
+._wx{color: rgba(255, 255, 255, 0.8);} ._wx:hover{color: rgba(255, 255, 255, 1);  }
+
+/* RB-RIPPLE EFFECT */
+.ripple{
+    position: absolute;
+    top:0; left:0; bottom:0; right:0;
+    overflow: hidden;
+    -webkit-transform: translateZ(0); /* to contain zoomed ripple */
+    transform: translateZ(0);
+    border-radius: inherit; /* inherit from parent (rounded buttons etc) */
+    pointer-events: none; /* allow user interaction */
+}
+.rippleWave{
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0.7); -webkit-transform: scale(0.7);
+    background: rgba(255,255,255, 1);
+    opacity: 0.45;
+    animation: ripple 2.4s forwards;
+    -webkit-animation: ripple 2.4s forwards;
+}
+@keyframes ripple {
+    to {transform: scale(24); opacity: 0;}
+}
+@-webkit-keyframes ripple {
+    to {-webkit-transform: scale(24); opacity: 0;}
 }

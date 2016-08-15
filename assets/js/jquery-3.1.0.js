@@ -6620,6 +6620,9 @@ jQuery.easing = {
 	swing: function( p ) {
 		return 0.5 - Math.cos( p * Math.PI ) / 2;
 	},
+	easeOutCubeRoot: function( p ){
+		return Math.sqrt(Math.sqrt(p));
+	},
 	_default: "swing"
 };
 
